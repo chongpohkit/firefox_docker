@@ -8,16 +8,16 @@ v1.0 Initial version
 
 **To pull from docker hub:**
 ~~~
-docker pull chongpohkit/firefox
-docker run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix chongpohkit/firefox
+docker pull chongpohkit/firefox_docker
+docker run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix chongpohkit/firefox_docker
 ~~~
 
 
 **To build and run locally:**
-Pull the Dockerfile from `https://github.com/chongpohkit/Dockerfiles/tree/master/firefox`
+Pull the Dockerfile from `https://github.com/chongpohkit/firefox_docker`
 ~~~
-docker build -t firefox .
-docker run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix firefox
+docker build -t firefox_docker .
+docker run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix firefox_docker
 ~~~
 
 
